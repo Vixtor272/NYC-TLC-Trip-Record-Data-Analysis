@@ -1,0 +1,52 @@
+services:
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_DB: 
+      POSTGRES_USER: ny_taxi_user
+      POSTGRES_PASSWORD: ny_taxi_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - ny_taxi_net
+    restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+    networks:
+      - ny_taxi_net
+    restart: unless-stopped
+
+  mage:
+    image: mageai/mageai:latest
+    container_name: mage
+    environment:
+      MAGE_DATABASE_CONNECTION_URL: postgresql+psycopg2://ny_taxi_user:ny_taxi_password@postgres:5432/ny_taxi_raw
+    ports:
+      - "6789:6789"
+    volumes:
+      - ./mage_data:/home/src
+    depends_on:
+      - postgres
+    networks:
+      - ny_taxi_net
+    restart: unless-stopped
+
+volumes:
+  pgdata:
+  pgadmin_data:
+
+networks:
+  ny_taxi_net:
+    driver: bridge
