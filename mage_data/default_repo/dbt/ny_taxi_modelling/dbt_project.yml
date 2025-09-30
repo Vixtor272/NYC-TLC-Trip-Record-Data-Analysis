@@ -1,0 +1,29 @@
+name: ny_taxi_modelling
+version: '1.0.0'
+
+config-version: 2
+
+profile: ny_taxi_modelling
+
+# Dónde están tus modelos (la carpeta que contiene `staging/`, `clean/`, etc.)
+model-paths: ["models"]
+
+# Otras rutas comunes
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
+
+# Comportamiento por defecto de los modelos por carpeta
+models:
+  ny_taxi_modelling:
+    staging:
+      +materialized: view
+    clean:
+      +materialized: table

@@ -1,0 +1,17 @@
+version: 2
+
+sources:
+  - name: ny_taxi_modelling
+    description: "Fuentes crudas de NYC TLC (BRONZE)"
+    database: "NYC_TLC"
+    schema: "SILVER"
+    tables:
+      - name: taxi_zones
+        identifier: "TAXI_ZONES"
+        description: "Lookup de zonas: LocationID, Borough, Zone, Service_Zone"
+      - name: yellow_trips
+        identifier: "YELLOW_TRIPS"
+        description: "Raw yellow taxi trips en BRONZE"
+      - name: green_trips
+        identifier: "GREEN_TRIPS"
+        description: "Raw green taxi trips en BRONZE"

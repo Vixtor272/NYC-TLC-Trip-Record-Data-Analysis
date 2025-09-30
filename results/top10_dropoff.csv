@@ -1,0 +1,45 @@
+MONTH,LOCATION_ID,ZONE,TRIPS_COUNT
+1,161,Midtown Center,472347
+1,236,Upper East Side North,456078
+1,237,Upper East Side South,410592
+1,170,Murray Hill,406454
+1,230,Times Sq/Theatre District,403095
+1,162,Midtown East,378740
+1,79,East Village,371931
+1,234,Union Sq,371082
+1,48,Clinton East,356354
+1,186,Penn Station/Madison Sq West,345817
+2,161,Midtown Center,461459
+2,236,Upper East Side North,423142
+2,237,Upper East Side South,389434
+2,170,Murray Hill,389026
+2,230,Times Sq/Theatre District,374784
+2,162,Midtown East,370995
+2,234,Union Sq,366556
+2,79,East Village,346108
+2,48,Clinton East,328402
+2,186,Penn Station/Madison Sq West,321954
+3,264,,56
+3,230,Times Sq/Theatre District,18
+3,79,East Village,14
+3,186,Penn Station/Madison Sq West,14
+3,158,Meatpacking/West Village West,11
+3,234,Union Sq,10
+3,161,Midtown Center,10
+3,170,Murray Hill,10
+3,142,Lincoln Square East,10
+3,68,East Chelsea,9
+4,48,Clinton East,1
+7,264,,7
+9,234,Union Sq,1
+9,246,West Chelsea/Hudson Yards,1
+12,79,East Village,4729
+12,170,Murray Hill,3974
+12,263,Yorkville West,3747
+12,7,Astoria,3456
+12,48,Clinton East,3385
+12,141,Lenox Hill West,3296
+12,107,Gramercy,3145
+12,264,,2920
+12,186,Penn Station/Madison Sq West,2855
+12,68,East Chelsea,2686

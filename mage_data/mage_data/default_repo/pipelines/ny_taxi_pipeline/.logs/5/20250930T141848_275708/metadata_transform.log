@@ -1,0 +1,1 @@
+2025-09-30T14:20:49 {"block_run_id": 1134, "block_uuid": "metadata_transform", "pipeline_run_id": 396, "pipeline_schedule_id": 5, "pipeline_uuid": "ny_taxi_pipeline", "hostname": "3d7c559945b8", "block_type": "transformer", "level": "INFO", "message": "Start executing block with BlockExecutor.", "timestamp": 1759242049.680549, "uuid": "77456e454fed44d1945cc15287419320"}

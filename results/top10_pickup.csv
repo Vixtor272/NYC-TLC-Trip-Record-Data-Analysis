@@ -1,0 +1,31 @@
+MONTH,LOCATION_ID,ZONE,TRIPS_COUNT
+1,237,Upper East Side South,465313
+1,161,Midtown Center,444875
+1,236,Upper East Side North,443697
+1,79,East Village,441802
+1,230,Times Sq/Theatre District,431023
+1,234,Union Sq,423824
+1,170,Murray Hill,409436
+1,162,Midtown East,409153
+1,48,Clinton East,400615
+1,186,Penn Station/Madison Sq West,391976
+2,237,Upper East Side South,446181
+2,161,Midtown Center,417091
+2,236,Upper East Side North,416340
+2,234,Union Sq,412040
+2,79,East Village,411809
+2,162,Midtown East,403652
+2,230,Times Sq/Theatre District,403258
+2,170,Murray Hill,400861
+2,48,Clinton East,382459
+2,186,Penn Station/Madison Sq West,372253
+12,79,East Village,5902
+12,170,Murray Hill,4381
+12,107,Gramercy,4347
+12,48,Clinton East,4311
+12,263,Yorkville West,3653
+12,148,Lower East Side,3629
+12,164,Midtown South,3393
+12,7,Astoria,3300
+12,229,Sutton Place/Turtle Bay North,3213
+12,141,Lenox Hill West,3209

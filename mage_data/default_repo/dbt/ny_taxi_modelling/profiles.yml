@@ -1,0 +1,12 @@
+ny_taxi_modelling:
+    target: dev
+    outputs:
+        dev:
+            type: snowflake
+            database: "NYC_TLC"
+            user: "VICTOR17"
+            password: "Vixtorbas2721633#"
+            role: "ACCOUNTADMIN"
+            schema: "GOLD"
+            account: "VELCXYP-IV27911"
+            warehouse: "COMPUTE_WH"
