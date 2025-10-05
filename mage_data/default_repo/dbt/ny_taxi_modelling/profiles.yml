@@ -4,9 +4,9 @@ ny_taxi_modelling:
         dev:
             type: snowflake
             database: "NYC_TLC"
-            user: "VICTOR17"
-            password: "Vixtorbas2721633#"
+            user: "{{ mage_secret_var('<SNOWFLAKE_USER>') }}"
+            password: "{{ mage_secret_var('<SNOWFLAKE_PASSWORD>') }}"
             role: "ACCOUNTADMIN"
             schema: "GOLD"
-            account: "VELCXYP-IV27911"
-            warehouse: "COMPUTE_WH"
+            account: "{{ mage_secret_var('<SNOWFLAKE_ACCOUNT>') }}"
+            warehouse: "{{ mage_secret_var('<SNOWFLAKE_WH>') }}"
