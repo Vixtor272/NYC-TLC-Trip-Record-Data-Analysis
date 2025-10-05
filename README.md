@@ -57,7 +57,7 @@ Mage orquesta backfill mensual con idempotencia (no duplicados si se vuelve a su
 
 ## Arquitectura — Bronze, Silver y Gold
 
-Sí, **Bronze** refleja fielmente el origen, pero en los metadatos también se añadió la columna `service_type`. En **Silver** se unifican los dos servicios (Yellow y Green) y se enriquece con la tabla de referencia **Taxi Zones** para obtener las localizaciones de pickup y dropoff. En **Gold** se implementa el esquema estrella con la tabla **fct_trips** y sus dimensiones clave.
+Sí, **Bronze** refleja fielmente el origen, pero en los metadatos también se añadió la columna `service_type`. En **Silver** se unifican los dos servicios (Yellow y Green) y se enriquece con la tabla de referencia **Taxi Zones** para obtener las localizaciones de pickup y dropoff, esto se hace en `models/staging/stg_taxi_union.sql`. En **Gold** se implementa el esquema estrella con la tabla **fct_trips** y sus dimensiones clave, esto se hace en `models/gold/fct_trips.sql` y cada dimensión correctamente nombrada.
 
 ---
 
@@ -69,13 +69,13 @@ Sí se aplica **clustering** en la capa Gold (tabla `fct_trips`), aunque no se i
 
 ## Seguridad — Secrets y permisos
 
-Se utilizan **secrets** para todo el pipeline de ingesta, transformación y exportación. En **dbt** no se logró implementar secrets incialmente, ya que el archivo `profiles.yml` del proyecto dentro de Mage no pudo leer las variables de entorno, pero ya actualizado sí lo logró.
+Se utilizan **secrets** para todo el pipeline de ingesta, transformación y exportación. También en todo el proceso de dbt para exportar las tablas silver y gold hacia Snowflake. No se creo un rol con permisos mínimos, todo se hizo con ADMIN.
 
 ---
 
 ## Calidad — Tests y documentación dbt
 
-En **dbt** se realiza toda la limpieza y validación de datos para la unificación de tablas. Los tests (`not_null`, `unique`, `accepted_values`, `relationships`) se ejecutan correctamente, y se generan la documentación y el **lineage**.
+En **dbt** se realiza toda la limpieza y validación de datos para la unificación de tablas. Los tests (`not_null`, `unique`, `accepted_values`, `relationships`) se ejecutan correctamente, y se generan la documentación y el **lineage** para el proyecto de dbt, específicamente en staging (fase silver) se hacen estos tests.
 
 ---
 
