@@ -49,6 +49,39 @@ This is an attempt to recover data from NYC TLC Trip Record Data using Mage to I
 
 ---
 
+## Operación — Backfill y orquestación
 
-*Documento generado automáticamente según tu indicación: Yellow — solo Ene/Feb 2015 con ✓; resto X. Green — todos los meses de 2015–2025 con ✓.*
+Mage orquesta backfill mensual con idempotencia (no duplicados si se vuelve a subir un mes) y metadatos por mes.
+
+---
+
+## Arquitectura — Bronze, Silver y Gold
+
+Sí, **Bronze** refleja fielmente el origen, pero en los metadatos también se añadió la columna `service_type`. En **Silver** se unifican los dos servicios (Yellow y Green) y se enriquece con la tabla de referencia **Taxi Zones** para obtener las localizaciones de pickup y dropoff. En **Gold** se implementa el esquema estrella con la tabla **fct_trips** y sus dimensiones clave.
+
+---
+
+## Clustering
+
+Sí se aplica **clustering** en la capa Gold (tabla `fct_trips`), aunque no se incluyó evidencia del antes y después (Query Profile o pruning) como referencia documental.
+
+---
+
+## Seguridad — Secrets y permisos
+
+Se utilizan **secrets** para todo el pipeline de ingesta, transformación y exportación. En **dbt** no se logró implementar secrets, ya que el archivo `profiles.yml` del proyecto dentro de Mage no pudo leer las variables de entorno.
+
+---
+
+## Calidad — Tests y documentación dbt
+
+En **dbt** se realiza toda la limpieza y validación de datos para la unificación de tablas. Los tests (`not_null`, `unique`, `accepted_values`, `relationships`) se ejecutan correctamente, y se generan la documentación y el **lineage**.
+
+---
+
+## Análisis — Preguntas de negocio
+
+Sí se responden las 5 preguntas de negocio desde la capa **Gold**, en el notebook `data_analysis.ipynb`, utilizando las tablas finales generadas.
+
+---
 
