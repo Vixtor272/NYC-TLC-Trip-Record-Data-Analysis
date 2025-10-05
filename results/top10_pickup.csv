@@ -1,31 +1,121 @@
 MONTH,LOCATION_ID,ZONE,TRIPS_COUNT
-1,237,Upper East Side South,465313
-1,161,Midtown Center,444875
-1,236,Upper East Side North,443697
-1,79,East Village,441802
-1,230,Times Sq/Theatre District,431023
-1,234,Union Sq,423824
-1,170,Murray Hill,409436
-1,162,Midtown East,409153
-1,48,Clinton East,400615
-1,186,Penn Station/Madison Sq West,391976
-2,237,Upper East Side South,446181
-2,161,Midtown Center,417091
-2,236,Upper East Side North,416340
-2,234,Union Sq,412040
-2,79,East Village,411809
-2,162,Midtown East,403652
-2,230,Times Sq/Theatre District,403258
-2,170,Murray Hill,400861
-2,48,Clinton East,382459
-2,186,Penn Station/Madison Sq West,372253
-12,79,East Village,5902
-12,170,Murray Hill,4381
-12,107,Gramercy,4347
-12,48,Clinton East,4311
-12,263,Yorkville West,3653
-12,148,Lower East Side,3629
-12,164,Midtown South,3393
-12,7,Astoria,3300
-12,229,Sutton Place/Turtle Bay North,3213
-12,141,Lenox Hill West,3209
+1,237,Upper East Side South,2884018
+1,236,Upper East Side North,2770126
+1,161,Midtown Center,2720804
+1,162,Midtown East,2364300
+1,230,Times Sq/Theatre District,2352603
+1,186,Penn Station/Madison Sq West,2321582
+1,234,Union Sq,2174128
+1,170,Murray Hill,2146406
+1,48,Clinton East,2082034
+1,142,Lincoln Square East,2060831
+2,237,Upper East Side South,2772462
+2,161,Midtown Center,2692961
+2,236,Upper East Side North,2629949
+2,162,Midtown East,2343921
+2,186,Penn Station/Madison Sq West,2289718
+2,230,Times Sq/Theatre District,2270845
+2,234,Union Sq,2194494
+2,170,Murray Hill,2151460
+2,48,Clinton East,2067032
+2,142,Lincoln Square East,2028705
+3,237,Upper East Side South,2390335
+3,161,Midtown Center,2374658
+3,236,Upper East Side North,2210177
+3,162,Midtown East,2045557
+3,186,Penn Station/Madison Sq West,2008249
+3,230,Times Sq/Theatre District,1995469
+3,170,Murray Hill,1870952
+3,234,Union Sq,1850392
+3,48,Clinton East,1813136
+3,142,Lincoln Square East,1723439
+4,237,Upper East Side South,2862010
+4,161,Midtown Center,2655316
+4,236,Upper East Side North,2618110
+4,162,Midtown East,2296314
+4,186,Penn Station/Madison Sq West,2231197
+4,230,Times Sq/Theatre District,2210119
+4,170,Murray Hill,2119830
+4,234,Union Sq,2107770
+4,48,Clinton East,2058840
+4,142,Lincoln Square East,2031530
+5,237,Upper East Side South,2604171
+5,236,Upper East Side North,2380325
+5,161,Midtown Center,2254773
+5,162,Midtown East,1969257
+5,186,Penn Station/Madison Sq West,1933839
+5,230,Times Sq/Theatre District,1866619
+5,142,Lincoln Square East,1852297
+5,132,JFK Airport,1849579
+5,170,Murray Hill,1846929
+5,234,Union Sq,1802490
+6,237,Upper East Side South,2750313
+6,161,Midtown Center,2521403
+6,236,Upper East Side North,2477613
+6,162,Midtown East,2251515
+6,186,Penn Station/Madison Sq West,2209583
+6,170,Murray Hill,2124012
+6,230,Times Sq/Theatre District,2086942
+6,48,Clinton East,2034432
+6,132,JFK Airport,2020709
+6,234,Union Sq,1999576
+7,161,Midtown Center,2455158
+7,237,Upper East Side South,2265345
+7,186,Penn Station/Madison Sq West,2217401
+7,162,Midtown East,2142809
+7,230,Times Sq/Theatre District,2049601
+7,132,JFK Airport,2048769
+7,170,Murray Hill,2032121
+7,236,Upper East Side North,1938206
+7,48,Clinton East,1900998
+7,234,Union Sq,1851702
+8,161,Midtown Center,2405753
+8,186,Penn Station/Madison Sq West,2204965
+8,237,Upper East Side South,2148451
+8,132,JFK Airport,2112721
+8,162,Midtown East,2091249
+8,170,Murray Hill,2000730
+8,230,Times Sq/Theatre District,1981206
+8,234,Union Sq,1866267
+8,48,Clinton East,1855266
+8,236,Upper East Side North,1818803
+9,237,Upper East Side South,2421981
+9,236,Upper East Side North,2212601
+9,161,Midtown Center,2054478
+9,186,Penn Station/Madison Sq West,2006710
+9,162,Midtown East,1905882
+9,132,JFK Airport,1879970
+9,230,Times Sq/Theatre District,1839917
+9,170,Murray Hill,1833231
+9,234,Union Sq,1809942
+9,48,Clinton East,1808330
+10,237,Upper East Side South,2834192
+10,236,Upper East Side North,2575800
+10,161,Midtown Center,2483909
+10,162,Midtown East,2183701
+10,186,Penn Station/Madison Sq West,2173697
+10,230,Times Sq/Theatre District,2070651
+10,170,Murray Hill,2012891
+10,142,Lincoln Square East,2009219
+10,234,Union Sq,1987342
+10,48,Clinton East,1967084
+11,237,Upper East Side South,2705188
+11,236,Upper East Side North,2463672
+11,161,Midtown Center,2389795
+11,186,Penn Station/Madison Sq West,2083100
+11,162,Midtown East,2049085
+11,230,Times Sq/Theatre District,1996367
+11,142,Lincoln Square East,1894525
+11,48,Clinton East,1843949
+11,170,Murray Hill,1839249
+11,234,Union Sq,1823922
+12,237,Upper East Side South,2715559
+12,236,Upper East Side North,2484946
+12,161,Midtown Center,2287710
+12,186,Penn Station/Madison Sq West,2107256
+12,162,Midtown East,2068315
+12,142,Lincoln Square East,1995476
+12,230,Times Sq/Theatre District,1982392
+12,48,Clinton East,1927371
+12,170,Murray Hill,1876178
+12,234,Union Sq,1832757
