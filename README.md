@@ -2,7 +2,7 @@
 This is an attempt to recover data from NYC TLC Trip Record Data using Mage to Ingest, Transform and Export this data to a lakehouse (Snowflake) in order to keep this tables on the cloud (roughly 15 gb of data) to then use SQL by connecting vscode to Snowflake and answer 5 simple questions about the data.
 
 
-# Matriz de cobertura mes a mes — Yellow y Green (2015–2025)
+# Matriz de cobertura mes a mes — Yellow y Green (2015–2025) 
 
 **Contexto**: Cargados todos los meses 2015–2025 (Parquet) de Yellow y Green. Esta tabla muestra la cobertura mes a mes por servicio. ✓ = mes cargado (cover), X = mes no cargado.
 
@@ -59,7 +59,7 @@ Mage orquesta backfill mensual con idempotencia (no duplicados si se vuelve a su
 
 ## Arquitectura — Bronze, Silver y Gold
 
-Sí, **Bronze** refleja fielmente el origen, pero en los metadatos también se añadió la columna `service_type`. En **Silver** se unifican los dos servicios (Yellow y Green) y se enriquece con la tabla de referencia **Taxi Zones** para obtener las localizaciones de pickup y dropoff, esto se hace en `models/staging/stg_taxi_union.sql`. En **Gold** se implementa el esquema estrella con la tabla **fct_trips** y sus dimensiones clave, esto se hace en `models/gold/fct_trips.sql` y cada dimensión correctamente nombrada.
+Sí, **Bronze** refleja fielmente el origen, pero en los metadatos también se añadió la columna `service`. En **Silver** se unifican los dos servicios (Yellow y Green) y se enriquece con la tabla de referencia **Taxi Zones** para obtener las localizaciones de pickup y dropoff, esto se hace en `models/staging/stg_taxi_union.sql`. En **Gold** se implementa el esquema estrella con la tabla **fct_trips** y sus dimensiones clave, esto se hace en `models/gold/fct_trips.sql` y cada dimensión correctamente nombrada.
 
 ---
 
