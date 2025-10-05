@@ -69,7 +69,7 @@ Sí se aplica **clustering** en la capa Gold (tabla `fct_trips`), aunque no se i
 
 ## Seguridad — Secrets y permisos
 
-Se utilizan **secrets** para todo el pipeline de ingesta, transformación y exportación. En **dbt** no se logró implementar secrets, ya que el archivo `profiles.yml` del proyecto dentro de Mage no pudo leer las variables de entorno.
+Se utilizan **secrets** para todo el pipeline de ingesta, transformación y exportación. En **dbt** no se logró implementar secrets incialmente, ya que el archivo `profiles.yml` del proyecto dentro de Mage no pudo leer las variables de entorno, pero ya actualizado sí lo logró.
 
 ---
 
