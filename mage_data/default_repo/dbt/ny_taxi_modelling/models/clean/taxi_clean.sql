@@ -5,7 +5,6 @@
 ) }}
 
 with unioned_trips as (
-    -- Tu unión actual de green y yellow
     with green as (
       select
         INGEST_RUN_ID,
