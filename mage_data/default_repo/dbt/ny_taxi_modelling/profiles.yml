@@ -6,7 +6,7 @@ ny_taxi_modelling:
             database: "NYC_TLC"
             user: "{{ mage_secret_var('<SNOWFLAKE_USER>') }}"
             password: "{{ mage_secret_var('<SNOWFLAKE_PASSWORD>') }}"
-            role: "ACCOUNTADMIN"
+            role: "{{ mage_secret_var('<SNOWFLAKE_ROLE>') }}"
             schema: "GOLD"
             account: "{{ mage_secret_var('<SNOWFLAKE_ACCOUNT>') }}"
             warehouse: "{{ mage_secret_var('<SNOWFLAKE_WH>') }}"
